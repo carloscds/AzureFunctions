@@ -1,0 +1,27 @@
+﻿{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "lista": {
+      "matchCondition": {
+        "methods": [ "GET" ],
+        "route": "/api/lista"
+      },
+      "backendUri": "https://exemplofunctions.azurewebsites.net/api/ListaClienteFunction",
+      "requestOverrides": {
+        "backend.request.headers.Accept": "application/xml",
+        "backend.request.headers.x-functions-key": "3GudiP36snw5HmPJ7at/jxZ0umFjHHP7qJhMqW9Dv7AfZiVC5YAfyQ=="
+      }
+    },
+    "insere": {
+      "matchCondition": {
+        "methods": [ "POST" ],
+        "route": "/api/insere"
+      },
+      "backendUri": "https://exemplofunctions.azurewebsites.net/api/InsereClienteFunction",
+      "requestOverrides": {
+        "backend.request.headers.Accept": "application/xml",
+        "backend.request.headers.x-functions-key": "3GudiP36snw5HmPJ7at/jxZ0umFjHHP7qJhMqW9Dv7AfZiVC5YAfyQ=="
+      }
+    }
+  }
+}
