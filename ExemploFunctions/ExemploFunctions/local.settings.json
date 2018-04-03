@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true"
+  },
+  "ConnectionStrings": {
+    "funcDB": "data source=functionserver.database.windows.net; initial catalog=functiondata; user id=function; password=Cds123456*;"
+  }
+}
