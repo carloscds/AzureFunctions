@@ -16,7 +16,7 @@ namespace ExemploFunctions
     public static class ListaClienteFunction
     {
         [FunctionName("ListaClienteFunction")]
-        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "")]HttpRequestMessage req, TraceWriter log)
+        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
             var conexaoStr = ConfigurationManager.ConnectionStrings["funcDB"].ConnectionString;
             var conexao = new SqlConnection(conexaoStr);
