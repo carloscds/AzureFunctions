@@ -12,6 +12,7 @@ namespace ExemploFunctions
     public static class EnviaNotificacaoFunction
     {
         [FunctionName("EnviaNotificacaoFunction")]
+        [Disable()]
         public static void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, TraceWriter log)
         {
             var conexaoStr = ConfigurationManager.ConnectionStrings["funcDB"].ConnectionString;
